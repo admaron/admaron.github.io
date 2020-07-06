@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200);
+
+.effect {
+  font-family: 'Montserrat', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+  font-size: 17px;
+  background: #000;
+  cursor: pointer;
+}
+
+.effect *,
+.effect:before,
+.effect:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.effect img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+
+.effect:before,
+.effect:after {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  content: '';
+  background-color: #fff;
+  z-index: 1;
+  opacity: 0;
+}
+
+.effect:before {
+  width: 0;
+  height: 1px;
+}
+
+.effect:after {
+  height: 0;
+  width: 1px;
+}
+
+.effect figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px 20px;
+}
+
+.effect h3,
+.effect h4 {
+  margin: 0;
+  font-size: 1.1em;
+  opacity: 0;
+}
+
+.effect h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.effect h4 {
+  font-size: .8em;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+}
+
+.effect:hover img,
+.effect.hover img {
+  zoom: 1;
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  opacity: 0.2;
+}
+
+.effect:hover:before,
+.effect.hover:before,
+.effect:hover:after,
+.effect.hover:after {
+  opacity: 1;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.effect:hover:before,
+.effect.hover:before {
+  width: 40px;
+}
+
+.effect:hover:after,
+.effect.hover:after {
+  height: 40px;
+}
+
+.effect:hover h3,
+.effect.hover h3,
+.effect:hover h4,
+.effect.hover h4 {
+  opacity: 1;
+}
+
+.effect:hover h3,
+.effect.hover h3 {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.effect:hover h4,
+.effect.hover h4 {
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
