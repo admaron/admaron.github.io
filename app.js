@@ -515,7 +515,7 @@ hamburger.addEventListener('click', () => {
         }, 0)
 
     const contact = document.querySelector(".contact");
-    const h = document.querySelectorAll("nav h1");
+    const h = document.querySelectorAll("nav h3");
     const h1 = h[0];
     const h2 = h[1];
 
