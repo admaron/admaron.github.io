@@ -1,2 +1,4 @@
 User-agent: Googlebot
 Disallow: /img/
+
+Sitemap: http://admaron.github.io/sitemap.xml
