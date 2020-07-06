@@ -220,7 +220,7 @@ new fullpage('#fullpage', {
         if (destination.index === 2 && animated[2] == false) {
             const article = destination.item.querySelector('article');
             const div = destination.item.querySelectorAll('article div');
-            const h1 = destination.item.querySelectorAll('article div h1');
+            const h1 = destination.item.querySelectorAll('article div h3');
             const p = destination.item.querySelectorAll('article div p');
 
 
