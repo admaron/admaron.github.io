@@ -425,7 +425,7 @@ nav .link a:hover {
   width: 50%;
 }
 
-.about article div h1 {
+.about article div h2 {
   position: absolute;
   top: 50%;
   left: 40%;
@@ -484,7 +484,7 @@ nav .link a:hover {
           justify-content: space-between;
 }
 
-.skills article div h1,
+.skills article div h3,
 .skills article div p {
   opacity: 0;
 }
@@ -509,7 +509,7 @@ nav .link a:hover {
   max-height: 90vh;
 }
 
-.skills article div:nth-of-type(1) h1 {
+.skills article div:nth-of-type(1) h3 {
   position: absolute;
   top: 10%;
   left: 23%;
@@ -552,7 +552,7 @@ nav .link a:hover {
   max-height: 90vh;
 }
 
-.skills article div:nth-of-type(2) h1 {
+.skills article div:nth-of-type(2) h3 {
   position: absolute;
   top: 10%;
   right: 23%;
@@ -698,7 +698,7 @@ nav .link a:hover {
     -webkit-transform: translate(0%, -50%);
             transform: translate(0%, -50%);
   }
-  .about article div h1 {
+  .about article div h2 {
     font-size: 2.4vw;
   }
   .about article div p {
@@ -712,8 +712,8 @@ nav .link a:hover {
     -webkit-transform: translate(0%, -93%);
             transform: translate(0%, -93%);
   }
-  .skills article div:nth-of-type(1) h1,
-  .skills article div:nth-of-type(2) h1 {
+  .skills article div:nth-of-type(1) h3,
+  .skills article div:nth-of-type(2) h3 {
     font-size: 1.15vw;
     width: 72.5%;
   }
@@ -896,7 +896,7 @@ nav .link a:hover {
     -webkit-transform: translate(0%, 0%);
             transform: translate(0%, 0%);
   }
-  .about article div h1 {
+  .about article div h2 {
     position: static;
     font-size: 4.5vw;
     -webkit-transform: translate(0%, 0%);
@@ -949,7 +949,7 @@ nav .link a:hover {
     max-width: 46%;
     max-height: 90vh;
   }
-  .skills article div:nth-of-type(1) h1 {
+  .skills article div:nth-of-type(1) h3 {
     font-size: 3.5vw;
   }
   .skills article div:nth-of-type(1) p {
@@ -967,7 +967,7 @@ nav .link a:hover {
     max-width: 46%;
     max-height: 90vh;
   }
-  .skills article div:nth-of-type(2) h1 {
+  .skills article div:nth-of-type(2) h3 {
     font-size: 3.5vw;
   }
   .skills article div:nth-of-type(2) p {

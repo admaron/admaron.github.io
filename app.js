@@ -123,7 +123,7 @@ new fullpage('#fullpage', {
         if (destination.index === 1 && animated[1] == false) {
             const article = destination.item.querySelector('article');
             const svg = destination.item.querySelector('article div svg');
-            const h1 = destination.item.querySelector('article div h1');
+            const h1 = destination.item.querySelector('article div h2');
             const p = destination.item.querySelectorAll('article div p');
             const logo = document.querySelector('header svg');
             const nav = document.querySelector('header .hamburger');
