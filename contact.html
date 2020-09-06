@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adam 'Admaron' Geppert">
+    <meta name="description"
+        content="Nazywam się Adam 'Admaron' Geppert. Jestem młodym frontend developerem oraz programistą. Zapraszam do kontaktu!">
+    <meta name="keywords"
+        content="adam geppert, adam geppert kontakt, Adam Geppert, Adam Geppert kontakt, Adam Admaron, Admaron, admaron, frontend developer kontakt, front end developer kontakt, frontend developer, front end developer, programista kontakt, programista, kontakt,javascript developer, web designer">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <title>Adam Geppert ※ Kontakt | Frontend developer / Programista</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #212121;
+            max-width: 1920px;
+            height: 100vh;
+            position: relative;
+            top: 0;
+            left: 50%;
+            -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 10vh;
+            width: 100%;
+            padding: 1em;
+            padding-right: 2em;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            z-index: 20;
+        }
+
+        header svg {
+            width: 5.5%;
+            max-height: 120%;
+        }
+
+        header .hamburger {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            width: 50px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        header .hamburger hr {
+            border: 3px solid #ba0001;
+            height: 1vh;
+        }
+
+        header .hamburger hr:nth-of-type(1) {
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transform-origin: center;
+            transform-origin: center;
+            -webkit-transform: matrix(0.7071, 0.7071, -0.7071, 0.7071, 0, 7.65);
+            transform: matrix(0.7071, 0.7071, -0.7071, 0.7071, 0, 7.65);
+        }
+
+        header .hamburger hr:nth-of-type(2) {
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: center;
+            transform-origin: center;
+            -webkit-transform: matrix(0.7071, -0.7071, 0.7071, 0.7071, 0, -7.65);
+            transform: matrix(0.7071, -0.7071, 0.7071, 0.7071, 0, -7.65);
+        }
+
+        main {
+            opacity: 0;
+            width: 100%;
+            height: 100vh;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 6em 6em 4em 6em;
+        }
+
+        main iframe {
+            padding: 2em;
+            background-color: #121212;
+            -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.25);
+            height: 100%;
+            -ms-flex-preferred-size: 45%;
+            flex-basis: 45%;
+        }
+
+        main section {
+            height: 100%;
+            -ms-flex-preferred-size: 45%;
+            flex-basis: 45%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+        main section div {
+            background-color: #121212;
+            -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.25);
+            padding: 2em;
+        }
+
+        main section div p:nth-of-type(1) {
+            font-family: Poppins;
+            font-style: italic;
+            font-weight: 100;
+            font-size: 45px;
+            text-align: center;
+            color: #BA0001;
+            margin-bottom: 0.25em;
+            width: 100%;
+        }
+
+        main section div p:nth-of-type(2) {
+            font-family: Poppins;
+            font-style: italic;
+            font-weight: 100;
+            font-size: 35px;
+            text-align: center;
+            color: #FFFFFF;
+            width: 100%;
+        }
+
+        main section address {
+            background-color: #121212;
+            -webkit-box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.25);
+            padding: 2em;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        main section address p {
+            font-family: Poppins;
+            font-style: italic;
+            font-weight: 100;
+            font-size: 38px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        main section address a {
+            font-family: Poppins;
+            font-style: italic;
+            font-weight: 100;
+            font-size: 38px;
+            text-align: center;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        @media (max-width: 1919px) {
+            header svg {
+                width: 50px;
+            }
+
+            main {
+                padding: 5em 1em 2em 1em;
+            }
+
+            main section div p:nth-of-type(1) {
+                font-size: 4vh;
+                font-weight: 200;
+                margin-bottom: 0.5em;
+            }
+
+            main section div p:nth-of-type(2) {
+                font-size: 3.5vh;
+                font-weight: 200;
+            }
+
+            main section address p {
+                font-size: 3vh;
+                font-weight: 200;
+            }
+
+            main section address a {
+                font-size: 3vh;
+                font-weight: 200;
+            }
+
+            main section address svg {
+                max-width: 15%;
+            }
+        }
+
+        @media (max-width: 1919px) and (max-width: 1024px) {
+            header svg {
+                width: 50px;
+            }
+
+            main {
+                padding: 6em 1.5em 2em 1.5em;
+            }
+
+            main iframe {
+                display: none;
+            }
+
+            main section {
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+                height: 100%;
+            }
+
+            main section div p:nth-of-type(1) {
+                font-size: 3vh;
+                font-weight: 200;
+                margin-bottom: 0.5em;
+            }
+
+            main section div p:nth-of-type(2) {
+                font-size: 2.5vh;
+                font-weight: 200;
+            }
+
+            main section address {
+                padding: 0.5em 1em 1em 1em;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+
+            main section address p {
+                font-size: 2.7vh;
+                font-weight: 200;
+            }
+
+            main section address a {
+                font-size: 2.7vh;
+                font-weight: 200;
+            }
+
+            main section address svg {
+                max-width: 15%;
+            }
+        }
+
+        /*# sourceMappingURL=style-con.css.map */
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <svg width="100" height="588" viewBox="0 0 596 588" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="215.39" y="3.8176" width="435" height="419" transform="rotate(30 215.39 3.8176)" fill="#242424"
+                stroke="#BA0001" stroke-width="5" />
+            <path
+                d="M296 481.93L296 440.035L446 440.035C448.93 440.035 451.664 439.449 454.203 438.277C456.742 437.203 458.939 435.689 460.795 433.736C462.748 431.881 464.262 429.684 465.336 427.145C466.41 424.605 466.947 421.871 466.947 418.941C466.947 416.012 466.41 413.277 465.336 410.738C464.262 408.199 462.748 405.953 460.795 404C458.939 402.145 456.742 400.68 454.203 399.605C451.664 398.531 448.93 397.994 446 397.994L296 397.994L296 355.953L446 355.953C448.93 355.953 451.664 355.416 454.203 354.342C456.742 353.268 458.939 351.754 460.795 349.801C462.748 347.945 464.262 345.748 465.336 343.209C466.41 340.67 466.947 337.936 466.947 335.006C466.947 332.076 466.41 329.342 465.336 326.803C464.262 324.264 462.748 322.018 460.795 320.064C458.939 318.209 456.742 316.744 454.203 315.67C451.664 314.596 448.93 314.059 446 314.059L296 314.059L296 272.018L446 272.018C454.691 272.018 462.846 273.629 470.463 276.852C478.178 280.172 484.867 284.664 490.531 290.328C496.293 296.09 500.785 302.779 504.008 310.396C507.328 318.111 508.988 326.314 508.988 335.006C508.988 342.818 507.572 350.338 504.74 357.564C502.006 364.791 498.002 371.285 492.729 377.047C498.002 382.809 502.006 389.254 504.74 396.383C507.572 403.609 508.988 411.129 508.988 418.941C508.988 427.633 507.328 435.787 504.008 443.404C500.785 451.119 496.293 457.809 490.531 463.473C484.867 469.234 478.178 473.727 470.463 476.949C462.846 480.27 454.691 481.93 446 481.93L296 481.93Z"
+                fill="white" />
+            <path
+                d="M212.064 357.885L170.023 357.885C164.262 357.885 158.842 359.008 153.764 361.254C148.588 363.402 144.096 366.381 140.287 370.189C136.479 373.998 133.5 378.49 131.352 383.666C129.105 388.744 127.982 394.164 127.982 399.926C127.982 405.687 129.105 411.156 131.352 416.332C133.5 421.41 136.479 425.854 140.287 429.662C144.096 433.471 148.588 436.498 153.764 438.744C158.842 440.893 164.262 441.967 170.023 441.967L212.064 441.967L212.064 357.885ZM296 315.844L296 357.885L253.959 357.885L253.959 441.967L296 441.967L296 483.861L170.023 483.861C158.402 483.861 147.514 481.664 137.357 477.27C127.104 472.875 118.168 466.918 110.551 459.398C102.934 451.781 96.9277 442.895 92.5332 432.738C88.1387 422.484 85.9414 411.547 85.9414 399.926C85.9414 388.305 88.1387 377.416 92.5332 367.26C96.9277 357.006 102.934 348.07 110.551 340.453C118.168 332.836 127.104 326.83 137.357 322.436C147.514 318.041 158.402 315.844 170.023 315.844L296 315.844Z"
+                fill="#BA0001" />
+            <path
+                d="M379.936 230.115L421.977 230.115C427.738 230.115 433.158 228.992 438.236 226.746C443.412 224.598 447.904 221.619 451.713 217.811C455.521 214.002 458.5 209.51 460.648 204.334C462.895 199.256 464.018 193.836 464.018 188.074C464.018 182.312 462.895 176.844 460.648 171.668C458.5 166.59 455.521 162.146 451.713 158.338C447.904 154.529 443.412 151.502 438.236 149.256C433.158 147.107 427.738 146.033 421.977 146.033L379.936 146.033L379.936 230.115ZM296 272.156L296 230.115L338.041 230.115L338.041 146.033L296 146.033L296 104.139L421.977 104.139C433.598 104.139 444.486 106.336 454.643 110.73C464.896 115.125 473.832 121.082 481.449 128.602C489.066 136.219 495.072 145.105 499.467 155.262C503.861 165.516 506.059 176.453 506.059 188.074C506.059 199.695 503.861 210.584 499.467 220.74C495.072 230.994 489.066 239.93 481.449 247.547C473.832 255.164 464.896 261.17 454.643 265.564C444.486 269.959 433.598 272.156 421.977 272.156L296 272.156Z"
+                fill="#BA0001" />
+            <path
+                d="M129.207 209.029C129.207 199.361 130.477 190.035 133.016 181.051C135.457 172.164 138.973 163.814 143.562 156.002C148.152 148.287 153.621 141.207 159.969 134.762C166.316 128.414 173.396 122.945 181.209 118.355C189.021 113.766 197.42 110.201 206.404 107.662C215.291 105.221 224.568 104 234.236 104L297.518 104L297.518 314.059L234.236 314.059C224.568 314.059 215.291 312.789 206.404 310.25C197.42 307.809 189.021 304.293 181.209 299.703C173.396 295.113 166.316 289.596 159.969 283.15C153.621 276.803 148.152 269.723 143.562 261.91C138.973 254.195 135.457 245.846 133.016 236.861C130.477 227.975 129.207 218.697 129.207 209.029ZM171.248 209.029C171.248 217.721 172.908 225.875 176.229 233.492C179.451 241.109 183.943 247.75 189.705 253.414C195.369 259.176 202.059 263.717 209.773 267.037C217.391 270.357 225.545 272.018 234.236 272.018L255.184 272.018L255.184 146.041L234.236 146.041C225.545 146.041 217.391 147.652 209.773 150.875C202.059 154.195 195.369 158.688 189.705 164.352C183.943 170.113 179.451 176.803 176.228 184.42C172.908 192.135 171.248 200.338 171.248 209.029Z"
+                fill="white" />
+        </svg>
+
+        <a href="https://admaron.github.io/" class="hamburger">
+            <hr>
+            <hr>
+        </a>
+
+    </header>
+
+    <main>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81552.07200185444!2d18.579577095269237!3d50.30121861115067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471130606c66b15f%3A0x9bbca89f06cbea11!2sGliwice!5e0!3m2!1spl!2spl!4v1598523544192!5m2!1spl!2spl"
+            width="600" height="450" frameborder="0" style="border:0; filter: grayscale(100%);" allowfullscreen=""
+            aria-hidden="false" tabindex="0"></iframe>
+
+        <section>
+            <div>
+                <p>Masz jakieś pytanie?<br>Chcesz porozmawiać?</p>
+                <p>Nie wstydź się, po prostu opowiedz mi o sobie, a wspólnie wymyślimy najlepsze rozwiązanie dla Ciebie
+                    i Twojego projektu.
+                </p>
+            </div>
+
+            <address>
+                <svg width="78" height="61" viewBox="0 0 78 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M68.25 0H9.74997C7.16501 0.00290478 4.68676 1.02628 2.85892 2.84561C1.03107 4.66493 0.00291596 7.13163 0 9.70455V51.2954C0.00289666 53.8683 1.03102 56.335 2.85886 58.1544C4.68671 59.9737 7.165 60.9971 9.74997 61H68.25C70.8349 60.9971 73.3132 59.9737 75.1411 58.1544C76.9689 56.3351 77.9971 53.8683 78 51.2954V9.70455C77.9971 7.13163 76.9689 4.66492 75.141 2.84559C73.3132 1.02627 70.8349 0.00289757 68.25 0ZM68.25 5.54546C68.5992 5.54683 68.9469 5.59197 69.2848 5.67982L39.0067 29.7203L8.90573 5.63091C9.1835 5.57401 9.46638 5.54537 9.74997 5.54546H68.25ZM68.25 55.4545H9.74997C8.64213 55.4533 7.58004 55.0147 6.79668 54.2349C6.01332 53.4552 5.57264 52.3981 5.57137 51.2954V10.078L37.2545 35.4337C37.7479 35.8284 38.3616 36.0442 38.9947 36.0454C39.6277 36.0466 40.2423 35.8332 40.7372 35.4403L72.4286 10.2774V51.2954C72.4273 52.3981 71.9867 53.4553 71.2033 54.235C70.4199 55.0147 69.3578 55.4533 68.25 55.4545Z"
+                        fill="#BA0001" fill-opacity="0.7" />
+                </svg>
+                <p>adam.geppert.it@gmail.com</p>
+            </address>
+
+            <address>
+                <svg width="79" height="78" viewBox="0 0 79 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M39.1427 0C17.525 0 0 17.525 0 39.1427C0 58.5312 14.1117 74.5882 32.6145 77.6975V47.3089H23.1721V36.3733H32.6145V28.3098C32.6145 18.9538 38.3288 13.8554 46.6762 13.8554C50.6741 13.8554 54.1098 14.1533 55.1072 14.2845V24.064L49.3177 24.0668C44.7791 24.0668 43.904 26.2231 43.904 29.3884V36.3677H54.7337L53.3212 47.3033H43.904V77.959C63.2706 75.6019 78.2849 59.1359 78.2849 39.1315C78.2849 17.525 60.7599 0 39.1427 0Z"
+                        fill="#BA0001" fill-opacity="0.7" />
+                </svg>
+                <a href="https://www.facebook.com/geppert.adam" target="blank">facebook.com/geppert.adam</a>
+            </address>
+
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const main = document.querySelector("main");
+            const tl = new TimelineMax();
+
+            tl.fromTo(main, 0.5, {
+                opacity: 0,
+                scale: 0.5,
+            }, {
+                opacity: 1,
+                scale: 1,
+            })
+
+        })
+    </script>
+
+</body>
+
+</html>
